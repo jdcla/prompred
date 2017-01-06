@@ -17,11 +17,12 @@ Project Organization
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
+    ├── log.txt			   <- Log file holding a record all executed scripts
+    │   └── result_logger  <- folder holding logs of the results of finished scripts
+    │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    ├── notebooks          <- Jupyter notebooks.
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
@@ -33,6 +34,7 @@ Project Organization
     │
     ├── src                <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
+    │   ├── log_utils.py   <- functions to create log files
     │   │
     │   ├── data           <- Scripts to download or generate data
     │   │   └── make_dataset.py

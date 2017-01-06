@@ -1,0 +1,412 @@
+###############################################
+### LOGFILE
+###############################################
+
+
+STARTED  2017-01-05_09-51_GS_RIDGE-POLY-3_alphagamma
+
+STARTED  2017-01-05_09-52_GS_RIDGE-POLY-3_alphagamma
+
+STARTED  2017-01-05_09-53_GS_RIDGE-POLY-3_alphagamma
+
+STARTED  2017-01-05_09-57_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'kInner': 5, 'model': ['ridge', 'poly', 3], 'parRange': [10, 10], 'data': '../../data/external/mut_rand_mod_lib.csv', 'pw': False, 'k': 5, 'parLabel': ['alpha', 'gamma'], 'seqRegions': [[-7, 12], [-6, 11]]}
+
+STARTED  2017-01-05_09-57_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'kInner': 5, 'model': ['ridge', 'poly', 3], 'parRange': [10, 10], 'data': '../../data/external/mut_rand_mod_lib.csv', 'pw': False, 'k': 5, 'parLabel': ['alpha', 'gamma'], 'seqRegions': [[-7, 12], [-6, 11]]}
+
+STARTED  2017-01-05_09-58_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'kInner': 5, 'model': ['ridge', 'poly', 3], 'parRange': [10, 10], 'data': '../../data/external/mut_rand_mod_lib.csv', 'pw': False, 'k': 5, 'parLabel': ['alpha', 'gamma'], 'seqRegions': [[-7, 12], [-6, 11]]}
+
+
+STARTED  2017-01-05_09-59_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'kInner': 5, 'model': ['ridge', 'poly', 3], 'parRange': [10, 10], 'data': '../../data/external/mut_rand_mod_lib.csv', 'pw': False, 'k': 5, 'parLabel': ['alpha', 'gamma'], 'seqRegions': [[-7, 12], [-6, 11]]}
+
+STARTED  2017-01-05_10-00_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'kInner': 5, 'model': ['ridge', 'poly', 3], 'parRange': [10, 10], 'data': '../../data/external/mut_rand_mod_lib.csv', 'pw': False, 'k': 5, 'parLabel': ['alpha', 'gamma'], 'seqRegions': [[-7, 12], [-6, 11]]}
+
+STARTED  2017-01-05_10-01_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'k': 5, 'model': ['ridge', 'poly', 3], 'parLabel': ['alpha', 'gamma'], 'parRange': [10, 10], 'data': '../../data/external/mut_rand_mod_lib.csv', 'kInner': 5, 'pw': False, 'seqRegions': [[-7, 12], [-6, 11]]}
+
+STARTED  2017-01-05_10-01_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'k': 5, 'model': ['ridge', 'poly', 3], 'parLabel': ['alpha', 'gamma'], 'parRange': [10, 10], 'data': '../../data/external/mut_rand_mod_lib.csv', 'kInner': 5, 'pw': False, 'seqRegions': [[-7, 12], [-6, 11]]}
+...FINISHED
+
+STARTED  2017-01-05_10-02_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'k': 5, 'model': ['ridge', 'poly', 3], 'parLabel': ['alpha', 'gamma'], 'parRange': [10, 10], 'data': '../../data/external/mut_rand_mod_lib.csv', 'kInner': 5, 'pw': False, 'seqRegions': [[-7, 12], [-6, 11]]}
+...FINISHED
+
+STARTED  2017-01-05_10-03_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'k': 5, 'model': ['ridge', 'poly', 3], 'parLabel': ['alpha', 'gamma'], 'parRange': [10, 10], 'data': '../../data/external/mut_rand_mod_lib.csv', 'kInner': 5, 'pw': False, 'seqRegions': [[-7, 12], [-6, 11]]}
+...FINISHED
+
+STARTED  2017-01-05_16-31_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'k': 5, 'model': ['ridge', 'poly', 3], 'data': '../data/external/mut_rand_mod_lib.csv', 'pw': False, 'kInner': 4, 'parLabel': ['alpha', 'gamma'], 'parRange': [10, 10], 'shuffle': True, 'seqRegions': <function seqRegions at 0x7f3637b31620>}
+
+STARTED  2017-01-05_16-38_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'pw': False, 'model': ['ridge', 'poly', 3], 'data': '../data/external/mut_rand_mod_lib.csv', 'kInner': 4, 'parLabel': ['alpha', 'gamma'], 'k': 5, 'parRange': [10, 10], 'seqRegions': [[0, 6], [0, 6]], 'shuffle': True}
+
+STARTED  2017-01-05_16-40_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'model': ['ridge', 'poly', 3], 'pw': False, 'k': 5, 'data': '../data/external/mut_rand_mod_lib.csv', 'parLabel': ['alpha', 'gamma'], 'parRange': [10, 10], 'kInner': 4, 'shuffle': True, 'seqRegions': [[0, 6], [0, 6]]}
+
+STARTED  2017-01-05_16-42_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'parLabel': ['alpha', 'gamma'], 'parRange': [10, 10], 'seqRegions': [[0, 6], [0, 6]], 'shuffle': True, 'k': 5, 'kInner': 4, 'pw': False, 'data': '../data/external/mut_rand_mod_lib.csv', 'model': ['ridge', 'poly', 3]}
+
+STARTED  2017-01-05_16-48_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'data': '../data/external/mut_rand_mod_lib.csv', 'pw': False, 'model': ['ridge', 'poly', 3], 'parLabel': ['alpha', 'gamma'], 'kInner': 4, 'parRange': [10, 10], 'k': 5, 'shuffle': True, 'seqRegions': [[0, 6], [0, 6]]}
+
+STARTED  2017-01-05_16-50_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'model': ['ridge', 'poly', 3], 'seqRegions': [[0, 6], [0, 6]], 'data': '../data/external/mut_rand_mod_lib.csv', 'k': 5, 'pw': False, 'parRange': [10, 10], 'parLabel': ['alpha', 'gamma'], 'shuffle': True, 'kInner': 4}
+
+STARTED  2017-01-05_16-51_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'seqRegions': array([[0, 6],
+       [0, 6]]), 'data': '../data/external/mut_rand_mod_lib.csv', 'model': ['ridge', 'poly', 3], 'pw': False, 'parLabel': ['alpha', 'gamma'], 'parRange': [10, 10], 'shuffle': True, 'k': 5, 'kInner': 4}
+
+STARTED  2017-01-05_16-53_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'kInner': 4, 'parLabel': array(['alpha', 'gamma'], 
+      dtype='<U5'), 'seqRegions': array([[0, 6],
+       [0, 6]]), 'pw': False, 'shuffle': True, 'parRange': array([10, 10]), 'data': '../data/external/mut_rand_mod_lib.csv', 'model': ['ridge', 'poly', 3], 'k': 5}
+
+STARTED  2017-01-05_16-59_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'pw': False, 'k': 5, 'parRange': [10, 10], 'model': ['ridge', 'poly', 3], 'seqRegions': array([[0, 6],
+       [0, 6]]), 'parLabel': ['alpha', 'gamma'], 'kInner': 4, 'shuffle': True, 'data': '../data/external/mut_rand_mod_lib.csv'}
+
+STARTED  2017-01-05_17-02_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'parRange': [10, 10], 'shuffle': True, 'model': ['ridge', 'poly', 3], 'seqRegions': array([[0, 6],
+       [0, 6]]), 'kInner': 4, 'pw': False, 'k': 5, 'function': 'GS', 'data': '../data/external/mut_rand_mod_lib.csv', 'parLabel': ['alpha', 'gamma']}
+
+STARTED  2017-01-05_17-03_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'data': '../data/external/mut_rand_mod_lib.csv', 'model': ['ridge', 'poly', 3], 'seqRegions': array([[0, 6],
+       [0, 6]]), 'k': 5, 'pw': False, 'parLabel': ['alpha', 'gamma'], 'kInner': 4, 'function': 'GS', 'shuffle': True, 'parRange': [10, 10]}
+
+STARTED  2017-01-05_17-04_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'function': 'GS', 'parLabel': ['alpha', 'gamma'], 'parRange': [10, 10], 'data': '../data/external/mut_rand_mod_lib.csv', 'kInner': 4, 'pw': False, 'k': 5, 'model': ['ridge', 'poly', 3], 'seqRegions': array([[0, 6],
+       [0, 6]]), 'shuffle': True}
+
+STARTED  2017-01-05_17-05_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'seqRegions': array([[0, 6],
+       [0, 6]]), 'kInner': 4, 'function': 'GS', 'parLabel': ['alpha', 'gamma'], 'data': '../data/external/mut_rand_mod_lib.csv', 'model': ['ridge', 'poly', 3], 'parRange': [10, 10], 'k': 5, 'pw': False, 'shuffle': True}
+
+STARTED  2017-01-05_17-05_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'kInner': 4, 'shuffle': True, 'data': '../data/external/mut_rand_mod_lib.csv', 'function': 'GS', 'pw': False, 'seqRegions': array([[0, 6],
+       [0, 6]]), 'parLabel': ['alpha', 'gamma'], 'model': ['ridge', 'poly', 3], 'parRange': [10, 10], 'k': 5}
+
+STARTED  2017-01-05_17-05_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'pw': False, 'parRange': [10, 10], 'k': 5, 'function': 'GS', 'parLabel': ['alpha', 'gamma'], 'data': '../data/external/mut_rand_mod_lib.csv', 'shuffle': True, 'model': ['ridge', 'poly', 3], 'kInner': 4, 'seqRegions': array([[0, 6],
+       [0, 6]])}
+
+STARTED  2017-01-05_17-06_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'pw': False, 'parRange': [10, 10], 'shuffle': True, 'kInner': 4, 'parLabel': ['alpha', 'gamma'], 'function': 'GS', 'k': 5, 'model': ['ridge', 'poly', 3], 'data': '../data/external/mut_rand_mod_lib.csv', 'seqRegions': array([[0, 6],
+       [0, 6]])}
+
+STARTED  2017-01-05_17-26_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'pw': False, 'seqRegions': array([[0, 6],
+       [0, 6]]), 'shuffle': True, 'parLabel': ['alpha', 'gamma'], 'k': 5, 'model': ['ridge', 'poly', 3], 'kInner': 4, 'data': '../data/external/mut_rand_mod_lib.csv', 'function': 'GS', 'parRange': [10, 10]}
+
+STARTED  2017-01-05_17-38_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'pw': False, 'data': '../data/external/mut_rand_mod_lib.csv', 'function': 'GS', 'shuffle': True, 'k': 5, 'kInner': 4, 'seqRegions': array([[0, 6],
+       [0, 6]]), 'parLabel': ['alpha', 'gamma'], 'model': ['ridge', 'poly', 3], 'parRange': [10, 10]}
+
+STARTED  2017-01-05_17-40_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'data': '../data/external/mut_rand_mod_lib.csv', 'parRange': [10, 10], 'model': ['ridge', 'poly', 3], 'function': 'GS', 'seqRegions': array([[0, 6],
+       [0, 6]]), 'parLabel': ['alpha', 'gamma'], 'pw': False, 'kInner': 4, 'shuffle': True, 'k': 5}
+
+STARTED  2017-01-05_17-41_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'k': 5, 'function': 'GS', 'model': ['ridge', 'poly', 3], 'seqRegions': array([[0, 6],
+       [0, 6]]), 'parRange': [10, 10], 'data': '../data/external/mut_rand_mod_lib.csv', 'parLabel': ['alpha', 'gamma'], 'kInner': 4, 'pw': False, 'shuffle': True}
+
+STARTED  2017-01-05_17-41_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'k': 5, 'parRange': [10, 10], 'pw': False, 'shuffle': True, 'seqRegions': array([[0, 6],
+       [0, 6]]), 'function': 'GS', 'model': ['ridge', 'poly', 3], 'data': '../data/external/mut_rand_mod_lib.csv', 'parLabel': ['alpha', 'gamma'], 'kInner': 4}
+
+STARTED  2017-01-05_17-42_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'model': ['ridge', 'poly', 3], 'parLabel': ['alpha', 'gamma'], 'k': 5, 'kInner': 4, 'parRange': [10, 10], 'shuffle': True, 'seqRegions': array([[0, 6],
+       [0, 6]]), 'function': 'GS', 'pw': False, 'data': '../data/external/mut_rand_mod_lib.csv'}
+
+STARTED  2017-01-05_17-48_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'kInner': 4, 'parRange': [10, 10], 'function': 'GS', 'pw': False, 'data': '../data/external/mut_rand_mod_lib.csv', 'parLabel': ['alpha', 'gamma'], 'shuffle': True, 'model': ['ridge', 'poly', 3], 'k': 5, 'seqRegions': array([[0, 6],
+       [0, 6]])}
+
+STARTED  2017-01-05_17-48_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'shuffle': True, 'model': ['ridge', 'poly', 3], 'pw': False, 'parRange': [10, 10], 'seqRegions': array([[0, 6],
+       [0, 6]]), 'kInner': 4, 'k': 5, 'parLabel': ['alpha', 'gamma'], 'data': '../data/external/mut_rand_mod_lib.csv', 'function': 'GS'}
+
+STARTED  2017-01-05_17-49_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'parLabel': ['alpha', 'gamma'], 'model': ['ridge', 'poly', 3], 'seqRegions': array([[0, 6],
+       [0, 6]]), 'shuffle': True, 'parRange': [10, 10], 'data': '../data/external/mut_rand_mod_lib.csv', 'kInner': 4, 'k': 5, 'pw': False, 'function': 'GS'}
+
+STARTED  2017-01-05_17-50_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'seqRegions': array([[0, 6],
+       [0, 6]]), 'pw': False, 'function': 'GS', 'k': 5, 'parRange': [10, 10], 'shuffle': True, 'kInner': 4, 'data': '../data/external/mut_rand_mod_lib.csv', 'parLabel': ['alpha', 'gamma'], 'model': ['ridge', 'poly', 3]}
+...FINISHED
+
+STARTED  2017-01-05_18-00_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'kInner': 4, 'k': 5, 'seqRegions': array([[0, 6],
+       [0, 6]]), 'pw': False, 'parRange': [10, 10], 'function': 'GS', 'model': ['ridge', 'poly', 3], 'shuffle': True, 'parLabel': ['alpha', 'gamma'], 'data': '../data/external/mut_rand_mod_lib.csv'}
+...FINISHED
+
+STARTED  2017-01-05_18-08_GS_RIDGE-POLY-3_alphagammacoef0
+	arguments: {'k': 5, 'parLabel': ['alpha', 'gamma', 'coef0'], 'data': '../data/external/mut_rand_mod_lib.csv', 'pw': False, 'seqRegions': array([[-12,  14],
+       [ -7,  12]]), 'model': ['ridge', 'poly', 3], 'shuffle': True, 'parRange': [10, 10, 10], 'kInner': 4, 'function': 'GS'}
+
+STARTED  2017-01-05_18-10_GS_RIDGE-POLY-3_alphagammacoef0
+	arguments: {'seqRegions': array([[-12,  14],
+       [ -7,  12]]), 'shuffle': True, 'pw': False, 'kInner': 4, 'k': 5, 'function': 'GS', 'parLabel': ['alpha', 'gamma', 'coef0'], 'parRange': [10, 10, 10], 'data': '../data/external/mut_rand_mod_lib.csv', 'model': ['ridge', 'poly', 3]}
+...FINISHED
+
+STARTED  2017-01-05_18-13_GS_RIDGE-POLY-3_alphagamma
+	arguments: {'kInner': 4, 'parRange': [10, 10], 'seqRegions': array([[-12,  14],
+       [ -7,  12]]), 'function': 'GS', 'parLabel': ['alpha', 'gamma'], 'k': 5, 'shuffle': True, 'model': ['ridge', 'poly', 3], 'data': '../data/external/mut_rand_mod_lib.csv', 'pw': False}
+...FINISHED
+
+STARTED  2017-01-05_18-14_GS_RIDGE-POLY-3_alphagammacoef0
+	arguments: {'data': '../data/external/mut_rand_mod_lib.csv', 'pw': False, 'kInner': 4, 'k': 5, 'parRange': [10, 10, 10], 'model': ['ridge', 'poly', 3], 'function': 'GS', 'shuffle': True, 'parLabel': ['alpha', 'gamma', 'coef0'], 'seqRegions': array([[-12,  14],
+       [ -7,  12]])}
+...FINISHED
+
+STARTED  2017-01-05_18-19_GS_FORESTREG-None-None_max_featuresmin_samples
+	arguments: {'pw': False, 'k': 5, 'seqRegions': array([[-12,  14],
+       [ -7,  12]]), 'kInner': 4, 'parLabel': ['max_features', 'min_samples'], 'function': 'GS', 'data': '../data/external/mut_rand_mod_lib.csv', 'model': ['forestReg', None, None], 'parRange': [100, 100], 'shuffle': True}
+
+STARTED  2017-01-05_18-20_GS_FORESTREG-None-None_max_featuresmin_samples_split
+	arguments: {'function': 'GS', 'shuffle': True, 'kInner': 4, 'data': '../data/external/mut_rand_mod_lib.csv', 'model': ['forestReg', None, None], 'pw': False, 'parRange': [100, 100], 'k': 5, 'parLabel': ['max_features', 'min_samples_split'], 'seqRegions': array([[-12,  14],
+       [ -7,  12]])}
+
+STARTED  2017-01-05_18-21_GS_FORESTREG-None-None_max_featuresmin_samples_split
+	arguments: {'kInner': 4, 'shuffle': True, 'seqRegions': array([[-12,  14],
+       [ -7,  12]]), 'parLabel': ['max_features', 'min_samples_split'], 'function': 'GS', 'data': '../data/external/mut_rand_mod_lib.csv', 'model': ['forestReg', None, None], 'parRange': [30, 10], 'pw': False, 'k': 5}
+
+STARTED  2017-01-05_18-21_GS_FORESTREG-None-None_max_featuresmin_samples_split
+	arguments: {'parRange': [10, 10], 'k': 5, 'parLabel': ['max_features', 'min_samples_split'], 'pw': False, 'shuffle': True, 'function': 'GS', 'data': '../data/external/mut_rand_mod_lib.csv', 'seqRegions': array([[-12,  14],
+       [ -7,  12]]), 'kInner': 4, 'model': ['forestReg', None, None]}
+
+STARTED  2017-01-05_19-54_GS_RIDGE-poly-3_alphagamma
+	arguments: {'parRange': [10, 10], 'modelOpt': {'coef0': 1}, 'modelCore': ['ridge', 'poly', 3], 'kInner': 4, 'pw': False, 'shuffle': True, 'k': 5, 'data': '../data/external/mut_rand_mod_lib.csv', 'parLabel': ['alpha', 'gamma'], 'seqRegions': array([[0, 6],
+       [0, 6]]), 'function': 'GS'}
+...FINISHED
+
+STARTED  2017-01-05_20-49_GS_FORESTREG-None-None_max_featuresmin_samples_split
+	arguments: {'seqRegions': array([[-12,  14],
+       [ -7,  12]]), 'k': 5, 'parLabel': ['max_features', 'min_samples_split'], 'modelCore': ['forestReg', None, None], 'data': '../data/external/mut_rand_mod_lib.csv', 'kInner': 4, 'shuffle': True, 'parRange': [10, 10], 'modelOpt': {}, 'function': 'GS', 'pw': False}
+
+STARTED  2017-01-05_20-51_GS_FORESTREG-None-None_max_featuresmin_samples_split
+	arguments: {'shuffle': True, 'pw': False, 'seqRegions': array([[-12,  14],
+       [ -7,  12]]), 'parRange': [10, 10], 'parLabel': ['max_features', 'min_samples_split'], 'kInner': 4, 'function': 'GS', 'data': '../data/external/mut_rand_mod_lib.csv', 'modelOpt': {}, 'k': 5, 'modelCore': ['forestReg', None, None]}
+
+STARTED  2017-01-05_20-51_GS_FORESTREG-None-None_max_featuresmin_samples_split
+	arguments: {'parLabel': ['max_features', 'min_samples_split'], 'modelOpt': {}, 'k': 5, 'data': '../data/external/mut_rand_mod_lib.csv', 'kInner': 4, 'parRange': [10, 10], 'pw': False, 'seqRegions': array([[-12,  14],
+       [ -7,  12]]), 'modelCore': ['forestReg', None, None], 'function': 'GS', 'shuffle': True}
+
+STARTED  2017-01-05_20-52_GS_FORESTREG-None-None_max_featuresmin_samples_split
+	arguments: {'modelCore': ['forestReg', None, None], 'parLabel': ['max_features', 'min_samples_split'], 'modelOpt': {}, 'parRange': [10, 10], 'data': '../data/external/mut_rand_mod_lib.csv', 'shuffle': True, 'kInner': 4, 'function': 'GS', 'seqRegions': array([[-12,  14],
+       [ -7,  12]]), 'pw': False, 'k': 5}
+
+STARTED  2017-01-05_20-53_GS_FORESTREG-None-None_max_featuresmin_samples_split
+	arguments: {'data': '../data/external/mut_rand_mod_lib.csv', 'modelOpt': {}, 'shuffle': True, 'pw': False, 'k': 5, 'seqRegions': array([[-12,  14],
+       [ -7,  12]]), 'kInner': 4, 'modelCore': ['forestReg', None, None], 'parRange': [10, 10], 'parLabel': ['max_features', 'min_samples_split'], 'function': 'GS'}
+
+STARTED  2017-01-05_20-53_GS_FORESTREG-None-None_max_featuresmin_samples_split
+	arguments: {'seqRegions': array([[-12,  14],
+       [ -7,  12]]), 'parRange': [10, 10], 'shuffle': True, 'function': 'GS', 'pw': False, 'modelOpt': {}, 'parLabel': ['max_features', 'min_samples_split'], 'k': 5, 'data': '../data/external/mut_rand_mod_lib.csv', 'modelCore': ['forestReg', None, None], 'kInner': 4}
+
+STARTED  2017-01-05_20-56_GS_FORESTREG-None-None_max_featuresmin_samples_split
+	arguments: {'parRange': [3, 10], 'parLabel': ['max_features', 'min_samples_split'], 'modelOpt': {}, 'kInner': 4, 'modelCore': ['forestReg', None, None], 'data': '../data/external/mut_rand_mod_lib.csv', 'pw': False, 'seqRegions': array([[-12,  14],
+       [ -7,  12]]), 'shuffle': True, 'k': 5, 'function': 'GS'}
+
+STARTED  2017-01-05_20-57_GS_FORESTREG-None-None_max_depthmin_samples_split
+	arguments: {'data': '../data/external/mut_rand_mod_lib.csv', 'kInner': 4, 'modelCore': ['forestReg', None, None], 'function': 'GS', 'pw': False, 'parRange': [10, 10], 'shuffle': True, 'modelOpt': {}, 'parLabel': ['max_depth', 'min_samples_split'], 'k': 5, 'seqRegions': array([[-6, 14],
+       [-7, 12]])}
+
+STARTED  2017-01-05_21-01_GS_FORESTREG-None-None_max_depthmin_samples_split
+	arguments: {'parRange': [10, 10], 'kInner': 4, 'k': 5, 'modelOpt': {}, 'function': 'GS', 'seqRegions': array([[-6, 14],
+       [-7, 12]]), 'data': '../data/external/mut_rand_mod_lib.csv', 'pw': False, 'modelCore': ['forestReg', None, None], 'shuffle': True, 'parLabel': ['max_depth', 'min_samples_split']}
+
+STARTED  2017-01-05_21-02_GS_RIDGE-poly-3_alphagamma
+	arguments: {'parRange': [10, 10], 'seqRegions': array([[0, 6],
+       [0, 6]]), 'kInner': 4, 'modelOpt': {'coef0': 1}, 'shuffle': True, 'modelCore': ['ridge', 'poly', 3], 'k': 5, 'parLabel': ['alpha', 'gamma'], 'pw': False, 'function': 'GS', 'data': '../data/external/mut_rand_mod_lib.csv'}
+...FINISHED
+
+STARTED  2017-01-06_08-55_GS_FORESTREG-None-None_max_depthmin_samples_split
+	arguments: {'modelCore': ['forestReg', None, None], 'shuffle': True, 'parLabel': ['max_depth', 'min_samples_split'], 'modelOpt': {}, 'seqRegions': array([[-6, 14],
+       [-7, 12]]), 'data': '../data/external/mut_rand_mod_lib.csv', 'parRange': [10, 10], 'k': 5, 'function': 'GS', 'kInner': 4, 'pw': False}
+...FINISHED
+
+STARTED  2017-01-06_09-10_LCis_FORESTREG-None-None_
+	arguments: {'parLabel': [], 'k': 5, 'shuffle': True, 'modelOpt': {}, 'parRange': None, 'data': '../data/external/mut_rand_mod_lib.csv', 'function': 'LCis', 'seqRegions': array([[-6, 14],
+       [-7, 12]]), 'modelCore': ['forestReg', None, None], 'kInner': 4, 'pw': False, 'step': 2}
+
+STARTED  2017-01-06_09-11_GS_FORESTREG-None-None_max_depthmin_samples_split
+	arguments: {'pw': False, 'data': '../data/external/mut_rand_mod_lib.csv', 'kInner': 4, 'parRange': [10, 10], 'modelCore': ['forestReg', None, None], 'step': 1, 'shuffle': True, 'seqRegions': array([[-6, 14],
+       [-7, 12]]), 'k': 5, 'function': 'GS', 'modelOpt': {}, 'parLabel': ['max_depth', 'min_samples_split']}
+
+STARTED  2017-01-06_09-12_GS_FORESTREG-None-None_max_depthmin_samples_split
+	arguments: {'modelCore': ['forestReg', None, None], 'kInner': 4, 'modelOpt': {}, 'function': 'GS', 'pw': False, 'k': 5, 'shuffle': True, 'data': '../data/external/mut_rand_mod_lib.csv', 'step': 1, 'parLabel': ['max_depth', 'min_samples_split'], 'seqRegions': array([[-6, 14],
+       [-7, 12]]), 'parRange': [10, 10]}
+...FINISHED
+
+STARTED  2017-01-06_09-20_LCis_FORESTREG-None-None_
+	arguments: {'pw': False, 'data': '../data/external/mut_rand_mod_lib.csv', 'k': 5, 'parRange': None, 'seqRegions': array([[-6, 14],
+       [-7, 12]]), 'modelOpt': {}, 'kInner': 4, 'step': 1, 'function': 'LCis', 'parLabel': '', 'modelCore': ['forestReg', None, None], 'shuffle': True}
+
+STARTED  2017-01-06_09-21_LCis_FORESTREG-None-None_
+	arguments: {'k': 5, 'seqRegions': array([[0, 6],
+       [0, 6]]), 'function': 'LCis', 'data': '../data/external/mut_rand_mod_lib.csv', 'parLabel': '', 'pw': False, 'step': 1, 'shuffle': True, 'modelCore': ['forestReg', None, None], 'parRange': None, 'modelOpt': {}, 'kInner': 4}
+
+STARTED  2017-01-06_09-23_LCis_FORESTREG-None-None_
+	arguments: {'parLabel': '', 'shuffle': True, 'modelCore': ['forestReg', None, None], 'k': 5, 'function': 'LCis', 'kInner': 4, 'seqRegions': array([[0, 6],
+       [0, 6]]), 'data': '../data/external/mut_rand_mod_lib.csv', 'parRange': None, 'step': 1, 'modelOpt': {}, 'pw': False}
+
+STARTED  2017-01-06_09-24_LCis_FORESTREG-None-None_
+	arguments: {'parRange': None, 'modelCore': ['forestReg', None, None], 'parLabel': '', 'step': 1, 'seqRegions': array([[0, 6],
+       [0, 6]]), 'function': 'LCis', 'pw': False, 'modelOpt': {}, 'kInner': 4, 'data': '../data/external/mut_rand_mod_lib.csv', 'shuffle': True, 'k': 5}
+
+STARTED  2017-01-06_09-25_LCis_FORESTREG-None-None_
+	arguments: {'modelCore': ['forestReg', None, None], 'function': 'LCis', 'data': '../data/external/mut_rand_mod_lib.csv', 'seqRegions': array([[0, 6],
+       [0, 6]]), 'k': 5, 'parLabel': '', 'modelOpt': {}, 'kInner': 4, 'step': 1, 'pw': False, 'parRange': None, 'shuffle': True}
+
+STARTED  2017-01-06_09-26_LCis_FORESTREG-None-None_
+	arguments: {'data': '../data/external/mut_rand_mod_lib.csv', 'parRange': None, 'modelCore': ['forestReg', None, None], 'function': 'LCis', 'shuffle': True, 'modelOpt': {}, 'kInner': 4, 'parLabel': '', 'seqRegions': array([[0, 6],
+       [0, 6]]), 'pw': False, 'step': 1, 'k': 5}
+
+STARTED  2017-01-06_09-27_LCis_FORESTREG-None-None_
+	arguments: {'function': 'LCis', 'parRange': None, 'k': 5, 'modelCore': ['forestReg', None, None], 'seqRegions': array([[0, 6],
+       [0, 6]]), 'parLabel': '', 'pw': False, 'kInner': 4, 'data': '../data/external/mut_rand_mod_lib.csv', 'modelOpt': {}, 'shuffle': True, 'step': 1}
+
+STARTED  2017-01-06_09-30_LCis_FORESTREG-None-None_
+	arguments: {'shuffle': True, 'parLabel': '', 'step': 1, 'pw': False, 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'parRange': None, 'data': '../data/external/mut_rand_mod_lib.csv', 'modelOpt': {}, 'modelCore': ['forestReg', None, None], 'function': 'LCis', 'k': 5, 'kInner': 4}
+
+STARTED  2017-01-06_09-32_LCis_FORESTREG-None-None_
+	arguments: {'step': 1, 'function': 'LCis', 'modelOpt': {}, 'k': 5, 'pw': False, 'shuffle': True, 'modelCore': ['forestReg', None, None], 'data': '../data/external/mut_rand_mod_lib.csv', 'parLabel': '', 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'parRange': None, 'kInner': 4}
+
+STARTED  2017-01-06_09-32_LCis_FORESTREG-None-None_
+	arguments: {'step': 1, 'k': 5, 'data': '../data/external/mut_rand_mod_lib.csv', 'modelCore': ['forestReg', None, None], 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'parRange': None, 'pw': False, 'function': 'LCis', 'kInner': 4, 'modelOpt': {}, 'shuffle': True, 'parLabel': ''}
+
+STARTED  2017-01-06_09-50_LCis_FORESTREG-None-None_
+	arguments: {'data': '../data/external/mut_rand_mod_lib.csv', 'modelCore': ['forestReg', None, None], 'parLabel': '', 'pw': False, 'step': 1, 'shuffle': True, 'parRange': None, 'modelOpt': {}, 'function': 'LCis', 'k': 5, 'kInner': 4, 'seqRegions': array([[-7, 12],
+       [-6, 11]])}
+
+STARTED  2017-01-06_09-52_LCis_FORESTREG-None-None_
+	arguments: {'parLabel': '', 'modelOpt': {}, 'kInner': 4, 'modelCore': ['forestReg', None, None], 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'step': 1, 'parRange': None, 'function': 'LCis', 'pw': False, 'k': 5, 'shuffle': True, 'data': '../data/external/mut_rand_mod_lib.csv'}
+
+STARTED  2017-01-06_09-54_LCis_FORESTREG-None-None_
+	arguments: {'step': 1, 'parRange': None, 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'modelOpt': {}, 'function': 'LCis', 'parLabel': '', 'data': '../data/external/mut_rand_mod_lib.csv', 'kInner': 4, 'modelCore': ['forestReg', None, None], 'k': 5, 'shuffle': True, 'pw': False}
+
+STARTED  2017-01-06_09-56_LCis_FORESTREG-None-None_
+	arguments: {'modelCore': ['forestReg', None, None], 'data': '../data/external/mut_rand_mod_lib.csv', 'shuffle': True, 'k': 5, 'kInner': 4, 'parRange': None, 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'modelOpt': {}, 'pw': False, 'parLabel': '', 'step': 1, 'function': 'LCis'}
+
+STARTED  2017-01-06_09-57_LCis_FORESTREG-None-None_
+	arguments: {'pw': False, 'k': 5, 'function': 'LCis', 'kInner': 4, 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'step': 1, 'modelOpt': {}, 'parLabel': '', 'data': '../data/external/mut_rand_mod_lib.csv', 'modelCore': ['forestReg', None, None], 'shuffle': True, 'parRange': None}
+
+STARTED  2017-01-06_09-58_LCis_FORESTREG-None-None_
+	arguments: {'parLabel': '', 'step': 1, 'modelCore': ['forestReg', None, None], 'pw': False, 'parRange': None, 'shuffle': True, 'k': 5, 'function': 'LCis', 'kInner': 4, 'modelOpt': {}, 'data': '../data/external/mut_rand_mod_lib.csv', 'seqRegions': array([[-7, 12],
+       [-6, 11]])}
+
+STARTED  2017-01-06_09-58_LCis_FORESTREG-None-None_
+	arguments: {'modelOpt': {}, 'shuffle': True, 'kInner': 4, 'step': 1, 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'pw': False, 'modelCore': ['forestReg', None, None], 'k': 5, 'parRange': None, 'function': 'LCis', 'data': '../data/external/mut_rand_mod_lib.csv', 'parLabel': ''}
+
+STARTED  2017-01-06_09-59_LCis_FORESTREG-None-None_
+	arguments: {'pw': False, 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'function': 'LCis', 'shuffle': True, 'data': '../data/external/mut_rand_mod_lib.csv', 'parRange': None, 'parLabel': '', 'step': 1, 'k': 5, 'kInner': 4, 'modelOpt': {}, 'modelCore': ['forestReg', None, None]}
+
+STARTED  2017-01-06_09-59_LCis_FORESTREG-None-None_
+	arguments: {'parRange': None, 'modelOpt': {}, 'function': 'LCis', 'pw': False, 'data': '../data/external/mut_rand_mod_lib.csv', 'modelCore': ['forestReg', None, None], 'kInner': 4, 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'step': 1, 'k': 5, 'parLabel': '', 'shuffle': True}
+
+STARTED  2017-01-06_09-59_LCis_FORESTREG-None-None_
+	arguments: {'data': '../data/external/mut_rand_mod_lib.csv', 'parRange': None, 'function': 'LCis', 'step': 1, 'pw': False, 'kInner': 4, 'parLabel': '', 'modelOpt': {}, 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'modelCore': ['forestReg', None, None], 'k': 5, 'shuffle': True}
+
+STARTED  2017-01-06_09-59_LCis_FORESTREG-None-None_
+	arguments: {'function': 'LCis', 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'shuffle': True, 'k': 5, 'modelCore': ['forestReg', None, None], 'data': '../data/external/mut_rand_mod_lib.csv', 'parLabel': '', 'parRange': None, 'kInner': 4, 'step': 1, 'pw': False, 'modelOpt': {}}
+
+STARTED  2017-01-06_10-00_LCis_FORESTREG-None-None_
+	arguments: {'function': 'LCis', 'parRange': None, 'data': '../data/external/mut_rand_mod_lib.csv', 'shuffle': True, 'pw': False, 'modelCore': ['forestReg', None, None], 'modelOpt': {}, 'parLabel': '', 'kInner': 4, 'step': 1, 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'k': 5}
+
+STARTED  2017-01-06_10-02_LCis_FORESTREG-None-None_
+	arguments: {'modelOpt': {}, 'parLabel': '', 'data': '../data/external/mut_rand_mod_lib.csv', 'function': 'LCis', 'k': 5, 'parRange': None, 'shuffle': True, 'kInner': 4, 'step': 1, 'pw': False, 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'modelCore': ['forestReg', None, None]}
+
+STARTED  2017-01-06_10-03_LCis_FORESTREG-None-None_
+	arguments: {'step': 1, 'parLabel': '', 'kInner': 4, 'pw': False, 'data': '../data/external/mut_rand_mod_lib.csv', 'modelCore': ['forestReg', None, None], 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'modelOpt': {}, 'function': 'LCis', 'shuffle': True, 'parRange': None, 'k': 5}
+
+STARTED  2017-01-06_10-03_LCis_FORESTREG-None-None_
+	arguments: {'kInner': 4, 'pw': False, 'parLabel': '', 'parRange': None, 'step': 1, 'function': 'LCis', 'shuffle': True, 'modelCore': ['forestReg', None, None], 'modelOpt': {}, 'data': '../data/external/mut_rand_mod_lib.csv', 'k': 5, 'seqRegions': array([[-7, 12],
+       [-6, 11]])}
+
+STARTED  2017-01-06_10-12_LCis_FORESTREG-None-None_
+	arguments: {'shuffle': True, 'modelCore': ['forestReg', None, None], 'kInner': 4, 'step': 1, 'pw': False, 'parLabel': '', 'parRange': None, 'modelOpt': {}, 'k': 5, 'data': '../data/external/mut_rand_mod_lib.csv', 'function': 'LCis', 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'dataEnrich': None}
+
+STARTED  2017-01-06_10-12_LCis_FORESTREG-None-None_
+	arguments: {'dataEnrich': None, 'step': 5, 'k': 5, 'pw': False, 'parLabel': '', 'shuffle': True, 'modelCore': ['forestReg', None, None], 'function': 'LCis', 'modelOpt': {}, 'data': '../data/external/mut_rand_mod_lib.csv', 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'kInner': 4, 'parRange': None}
+
+STARTED  2017-01-06_10-16_LCis_FORESTREG-None-None_
+	arguments: {'modelOpt': {}, 'parRange': None, 'k': 5, 'dataEnrich': None, 'function': 'LCis', 'step': 10, 'parLabel': '', 'pw': False, 'modelCore': ['forestReg', None, None], 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'data': '../data/external/mut_rand_mod_lib.csv', 'shuffle': True, 'kInner': 4}
+
+STARTED  2017-01-06_10-17_LCis_FORESTREG-None-None_
+	arguments: {'step': 30, 'kInner': 4, 'pw': False, 'k': 5, 'parRange': None, 'modelCore': ['forestReg', None, None], 'data': '../data/external/mut_rand_mod_lib.csv', 'modelOpt': {}, 'shuffle': True, 'dataEnrich': None, 'function': 'LCis', 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'parLabel': ''}
+...FINISHED
+
+STARTED  2017-01-06_10-21_LCis_FORESTREG-None-None_
+	arguments: {'modelOpt': {}, 'parRange': None, 'shuffle': True, 'kInner': 4, 'modelCore': ['forestReg', None, None], 'data': '../data/interim/pw_inbio_prom_lib.csv', 'pw': False, 'dataEnrich': '../data/interim/pw_mutalik_prom_lib.csv', 'parLabel': '', 'step': 5, 'function': 'LCis', 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'k': 5}
+
+STARTED  2017-01-06_10-22_LCis_FORESTREG-None-None_
+	arguments: {'k': 5, 'data': '../data/interim/pw_inbio_prom_lib.csv', 'modelCore': ['forestReg', None, None], 'parLabel': '', 'step': 5, 'pw': True, 'modelOpt': {}, 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'function': 'LCis', 'shuffle': True, 'dataEnrich': '../data/interim/pw_mutalik_prom_lib.csv', 'parRange': None, 'kInner': 4}
+...FINISHED
+
+STARTED  2017-01-06_10-24_LCisE_FORESTCLASS-None-None_
+	arguments: {'kInner': 4, 'parLabel': '', 'shuffle': True, 'pw': True, 'modelCore': ['forestClass', None, None], 'function': 'LCisE', 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'k': 5, 'dataEnrich': '../data/interim/pw_mutalik_prom_lib.csv', 'step': 5, 'parRange': None, 'data': '../data/interim/pw_inbio_prom_lib.csv', 'modelOpt': {}}
+
+STARTED  2017-01-06_10-24_LCisE_FORESTCLASS-None-None_
+	arguments: {'kInner': 4, 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'data': '../data/interim/pw_inbio_prom_lib.csv', 'step': 5, 'parRange': None, 'modelOpt': {}, 'shuffle': True, 'function': 'LCisE', 'dataEnrich': '../data/interim/pw_mutalik_prom_lib.csv', 'pw': True, 'modelCore': ['forestClass', None, None], 'parLabel': '', 'k': 5}
+...FINISHED
+
+STARTED  2017-01-06_10-45_LCos_RIDGE-poly-3_
+	arguments: {'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'pw': False, 'kInner': 4, 'data': '../data/interim/pw_mutalik_prom_lib.csv', 'dataOutLabel': None, 'modelOpt': {}, 'modelCore': ['ridge', 'poly', 3], 'parRange': None, 'dataEnrich': None, 'shuffle': True, 'dataOut': ['../data/interim/pw_anderson_prom_lib.csv', '../data/interim/pw_brewster_prom_lib.csv', '../data/interim/pw_hammer_prom_lib.csv', '../data/interim/pw_inbio_prom_lib.csv'], 'k': 5, 'step': 1, 'function': 'LCos', 'parLabel': ''}
+
+STARTED  2017-01-06_10-46_LCos_RIDGE-poly-3_
+	arguments: {'step': 1, 'data': '../data/interim/pw_mutalik_prom_lib.csv', 'parLabel': '', 'modelCore': ['ridge', 'poly', 3], 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'dataOutLabel': None, 'modelOpt': {}, 'kInner': 4, 'dataEnrich': None, 'dataOut': ['../data/interim/pw_anderson_prom_lib.csv', '../data/interim/pw_brewster_prom_lib.csv', '../data/interim/pw_hammer_prom_lib.csv', '../data/interim/pw_inbio_prom_lib.csv'], 'pw': False, 'shuffle': True, 'function': 'LCos', 'k': 5, 'parRange': None}
+
+STARTED  2017-01-06_10-46_LCos_FORESTCLASS-None-None_
+	arguments: {'shuffle': True, 'step': 1, 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'dataEnrich': None, 'pw': True, 'modelOpt': {}, 'dataOut': ['../data/interim/pw_anderson_prom_lib.csv', '../data/interim/pw_brewster_prom_lib.csv', '../data/interim/pw_hammer_prom_lib.csv', '../data/interim/pw_inbio_prom_lib.csv'], 'data': '../data/interim/pw_mutalik_prom_lib.csv', 'parRange': None, 'function': 'LCos', 'kInner': 4, 'modelCore': ['forestClass', None, None], 'parLabel': '', 'k': 5, 'dataOutLabel': None}
+
+STARTED  2017-01-06_10-48_LCos_FORESTCLASS-None-None_
+	arguments: {'function': 'LCos', 'pw': True, 'parRange': None, 'parLabel': '', 'kInner': 4, 'data': '../data/interim/pw_mutalik_prom_lib.csv', 'dataOutLabel': None, 'modelCore': ['forestClass', None, None], 'dataEnrich': None, 'modelOpt': {}, 'step': 1, 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'dataOut': ['../data/interim/pw_anderson_prom_lib.csv', '../data/interim/pw_brewster_prom_lib.csv', '../data/interim/pw_hammer_prom_lib.csv', '../data/interim/pw_inbio_prom_lib.csv'], 'k': 5, 'shuffle': True}
+
+STARTED  2017-01-06_10-50_LCos_FORESTCLASS-None-None_
+	arguments: {'step': 1, 'kInner': 4, 'data': '../data/interim/pw_mutalik_prom_lib.csv', 'parLabel': '', 'function': 'LCos', 'modelCore': ['forestClass', None, None], 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'parRange': None, 'pw': True, 'dataEnrich': None, 'k': 5, 'shuffle': True, 'dataOutLabel': None, 'modelOpt': {}, 'dataOut': ['../data/interim/pw_anderson_prom_lib.csv', '../data/interim/pw_brewster_prom_lib.csv', '../data/interim/pw_hammer_prom_lib.csv', '../data/interim/pw_inbio_prom_lib.csv']}
+
+STARTED  2017-01-06_10-52_LCos_FORESTCLASS-None-None_
+	arguments: {'function': 'LCos', 'parRange': None, 'shuffle': True, 'dataOutLabel': None, 'pw': True, 'k': 5, 'modelCore': ['forestClass', None, None], 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'modelOpt': {}, 'dataOut': ['../data/interim/pw_anderson_prom_lib.csv', '../data/interim/pw_brewster_prom_lib.csv', '../data/interim/pw_hammer_prom_lib.csv', '../data/interim/pw_inbio_prom_lib.csv'], 'data': '../data/interim/pw_mutalik_prom_lib.csv', 'dataEnrich': None, 'step': 1, 'kInner': 4, 'parLabel': ''}
+
+STARTED  2017-01-06_10-53_LCos_FORESTCLASS-None-None_
+	arguments: {'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'dataOutLabel': None, 'function': 'LCos', 'kInner': 4, 'step': 1, 'dataOut': ['../data/interim/pw_anderson_prom_lib.csv', '../data/interim/pw_brewster_prom_lib.csv', '../data/interim/pw_hammer_prom_lib.csv', '../data/interim/pw_inbio_prom_lib.csv'], 'data': '../data/interim/pw_mutalik_prom_lib.csv', 'parRange': None, 'modelCore': ['forestClass', None, None], 'modelOpt': {}, 'parLabel': '', 'k': 5, 'shuffle': True, 'pw': True, 'dataEnrich': None}
+
+STARTED  2017-01-06_10-54_LCos_FORESTCLASS-None-None_
+	arguments: {'pw': True, 'data': '../data/interim/pw_mutalik_prom_lib.csv', 'seqRegions': array([[-7, 12],
+       [-6, 11]]), 'k': 5, 'modelOpt': {}, 'modelCore': ['forestClass', None, None], 'parLabel': '', 'step': 1, 'kInner': 4, 'shuffle': True, 'function': 'LCos', 'parRange': None, 'dataOutLabel': None, 'dataOut': ['../data/interim/pw_anderson_prom_lib.csv', '../data/interim/pw_brewster_prom_lib.csv', '../data/interim/pw_hammer_prom_lib.csv', '../data/interim/pw_inbio_prom_lib.csv'], 'dataEnrich': None}
