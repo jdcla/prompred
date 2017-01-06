@@ -1,9 +1,33 @@
 prompred
-==============================
+=============================
 
 Machine learning models in promoter prediction of microorganisms
 
-Project Organization
+## Installation 
+
+To use this package, simply clone the project into a local folder
+
+```shell
+$ git clone https://github.com/Kleurenprinter/prompred.git
+```
+
+## Code Example
+
+The main module *prompred.py* is located in src/
+
+The functionality of prompred can be directly accessed through the terminal. For more information on all implemented functions, simply type:
+
+```shell
+$ python prompred.py -h
+```
+
+The following script executes a gridsearch for the parameters alpha and gamma for a ridge regression using a third degree polynomial kernel, with features extracted over the [-7 12] and [-7 12] regions of the promoters (with respect to the 35- and 10-box) 
+
+```shell
+$ python prompred.py GS -d ../data/external/mut_rand_mod_lib.csv -s -7 12 -7 12 -m ridge -k poly -g 3 --parL alpha gamma --parR 10 10  
+``` 
+
+## Project Organization
 ------------
 
     ├── LICENSE
@@ -34,6 +58,7 @@ Project Organization
     │
     ├── src                <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
+    │   ├── prompred.py    <- Main module, accessible through terminal
     │   ├── log_utils.py   <- functions to create log files
     │   │
     │   ├── data           <- Scripts to download or generate data
