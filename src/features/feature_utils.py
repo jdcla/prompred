@@ -151,25 +151,28 @@ def CreateFeaturesFromData(data, seqRegions, pw, shuffle=True):
     
     
     """
-     
-    dfDataset = pd.read_csv(data)
-    dfDatasetAligned = AlignSequences(dfDataset, pw)
-   
-    if shuffle is True:        
-        if pw is True:
-            dfDatasetShuffled , featureBox = PositionalFeaturesPW(dfDatasetAligned, seqRegions, shuffle=shuffle)
-        else:
-            dfDatasetShuffled , featureBox = PositionalFeatures(dfDatasetAligned, seqRegions, shuffle=shuffle)
-            
-        return dfDatasetShuffled , featureBox
+    if type(data) is not list:
+        data = [data]
     
-    if shuffle is False:
+    dfFeatureBoxList = []
+    dfDatasetList = []
+    for d in data:
+        dfDataset = pd.read_csv(d)
+        dfDataset = AlignSequences(dfDataset, pw)
+        if shuffle is True:
+            dfDataset = dfDataset.reindex(np.random.permutation(dfDataset.index))
         if pw is True:
-            featureBox = PositionalFeaturesPW(dfDatasetAligned, seqRegions, shuffle=shuffle)
+            dfFeatureBox = PositionalFeaturesPW(dfDataset, seqRegions)
         else:
-            featureBox = PositionalFeatures(dfDatasetAligned, seqRegions, shuffle=shuffle)
+            dfFeatureBox = PositionalFeatures(dfDataset, seqRegions)
         
-        return dfDatasetShuffled , featureBox
+        dfFeatureBoxList.append(dfFeatureBox)
+        dfDatasetList.append(dfDataset)
+
+    featureBox = pd.concat(dfFeatureBoxList)
+    dfDataset = pd.concat(dfDatasetList)
+    
+    return dfDataset, featureBox
 
 
 def CreateFullDummyDataFrame(posRange):
@@ -208,7 +211,7 @@ def CreateFullDummyDataFrame(posRange):
     
     return fullDummyDataFrame
 
-def PositionalFeatures(dfDataset, seqRegions, shuffle=False):
+def PositionalFeatures(dfDataset, seqRegions):
     
     """Create position features for a given promoter dataset. Returns dummy dataset.
     
@@ -238,9 +241,6 @@ def PositionalFeatures(dfDataset, seqRegions, shuffle=False):
     
     """
     
-    if shuffle is True:
-        dfDataset = dfDataset.reindex(np.random.permutation(dfDataset.index))
-
     # Selecting regions
     
     dfDataset['sequence'] = dfDataset['sequence'].str.upper()
@@ -279,14 +279,10 @@ def PositionalFeatures(dfDataset, seqRegions, shuffle=False):
             dfFinalBox[i] = positionBoxSS[i]
     
     dfPositionBox = pd.concat([dfFinalBox, spacerBox], axis=1)
-
     
-    if shuffle is True:
-        return dfDataset, dfPositionBox
-    else:
-        return dfPositionBox
+    return dfPositionBox
 
-def PositionalFeaturesPW(dfDataset, seqRegions, shuffle=False, subtract=True):
+def PositionalFeaturesPW(dfDataset, seqRegions, subtract=True):
     
     """Create position features of a pairwise promoter dataset. Returns matrix of dummy features.
     
@@ -319,9 +315,6 @@ def PositionalFeaturesPW(dfDataset, seqRegions, shuffle=False, subtract=True):
     dfDataset['sequence_1'] = dfDataset['sequence_1'].str.upper()
     dfDataset['sequence_2'] = dfDataset['sequence_2'].str.upper()
     
-    if shuffle is True:
-        dfDataset = dfDataset.reindex(np.random.permutation(dfDataset.index))
-    
     dfDataset1 = pd.DataFrame(dfDataset[['ID_1','sequence_1','mean_score_1','35boxstart_1','10boxstart_1']].values,columns=['ID','sequence','mean_score','35boxstart','10boxstart'])
     dfDataset2 = pd.DataFrame(dfDataset[['ID_2','sequence_2','mean_score_2','35boxstart_2','10boxstart_2']].values,columns=['ID','sequence','mean_score','35boxstart','10boxstart'])
 
@@ -334,12 +327,8 @@ def PositionalFeaturesPW(dfDataset, seqRegions, shuffle=False, subtract=True):
     else:
         dfPositionBox = pd.concat([dfPositionBoxSeq1, dfPositionBoxSeq2], axis=1)
    
-        
+    return dfPositionBox
 
-    if shuffle is False:
-        return dfPositionBox
-    else:
-        return dfDataset, dfPositionBox
 
     
 

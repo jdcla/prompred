@@ -92,67 +92,108 @@ def ScatterPvT(model, X, yTrue):
 
    return fig, ax
 
-def LearningCurveInSample(scores, k, step):
+def LearningCurveInSample(scores, k, step, dataLabel, scoring):
+   
+   titlesuffix = ""
+   
+   if dataLabel is not None:
+       titlesuffix = " of " + dataLabel + " dataset"
    
    fig, (ax1,ax2) = plt.subplots(2,1, figsize=(10,8),sharex=True)
-
-   ax1.set_title("Learning curve in sample score, stepwise increase of promoter in train library")
-   for i in range(k):
-       colors = ['bo','ro','yo','go','wo','mo','co','ko','bo','co']
-       ax1.plot(range(5,len(scores[i,:])+5),scores[i,:], colors[i])
-   ax1.set_xlabel("Step")
-   ax1.set_ylabel("Score")
-   meanScores=np.mean(scores,axis=0)
-   stdScores=np.std(scores,axis=0)
-   ax2.errorbar(range(5,len(meanScores)+5), meanScores[:], stdScores[:])
-   ax2.set_xlabel("Step")
-   ax2.set_ylabel("Score")
-   ax2.set_xticklabels(range(5,len(scores[i,:])*step+5,step))
-   
-   return fig, ax1, ax2
-
-def LearningCurveInSampleEnriched(scores, k, step):
-   
-   fig, (ax1,ax2) = plt.subplots(2,1, figsize=(10,8),sharex=True)
-
-   ax1.set_title("Learning curve in sample score of enriched dataset")
+   ax1.set_title("Learning curve in sample score" + titlesuffix)
    for i in range(k):
        colors = ['bo','ro','yo','go','wo','mo','co','ko','bo','co']
        ax1.plot(range(len(scores[i,:])),scores[i,:], colors[i])
    ax1.set_xlabel("Step")
-   ax1.set_ylabel("Score")
+   ax1.set_ylabel("Score ("+scoring+")")
    meanScores=np.mean(scores,axis=0)
    stdScores=np.std(scores,axis=0)
    ax2.errorbar(range(len(meanScores)), meanScores[:], stdScores[:])
    ax2.set_xlabel("Step")
-   ax2.set_ylabel("Score")
+   ax2.set_ylabel("Score ("+scoring+")")
+   ax1.set_xticklabels((ax1.get_xticks()*step)+5)
+  
+   return fig, ax1, ax2
+
+def LearningCurveInSampleEnriched(scores, k, step, dataLabel, dataLabelEnriched, scoring):
+   
+   titlesuffix = ""
+   titlesuffixE = ""    
+   
+   if dataLabel is not None:
+       titlesuffix = " of " + dataLabel + " dataset"
+   if dataLabelEnriched is not None:
+       if type(dataLabelEnriched) is list:
+           dataLabelsEnriched = ",".join(dataLabelEnriched )
+           titlesuffixE = "\n(enriched with " + dataLabelsEnriched + " dataset)"
+       else:
+           titlesuffixE = "\n(enriched with " + dataLabelEnriched + " dataset)"
+   
+   
+   fig, (ax1,ax2) = plt.subplots(2,1, figsize=(10,8),sharex=True)
+   ax1.set_title("Learning curve in sample score" + titlesuffix + titlesuffixE )
+   for i in range(k):
+       colors = ['bo','ro','yo','go','wo','mo','co','ko','bo','co']
+       ax1.plot(range(len(scores[i,:])),scores[i,:], colors[i])
+   ax1.set_xlabel("Step")
+   ax1.set_ylabel("Score ("+scoring+")")
+   meanScores=np.mean(scores,axis=0)
+   stdScores=np.std(scores,axis=0)
+   ax2.errorbar(range(len(meanScores)), meanScores[:], stdScores[:])
+   ax2.set_xlabel("Step")
+   ax2.set_ylabel("Score ("+scoring+")")
+   ax1.set_xticklabels((ax1.get_xticks()*step))
+
    
    return fig, ax1, ax2
 
-def LearningCurveOutOfSample(scores, step, labels):
-   fig, ax = plt.subplots(1,1, figsize=(8,6))
-
-   ax.set_title("Learning curve out of sample score, stepwise increase of promoter in train library")
+def LearningCurveOutOfSample(scores, step, labels, dataLabel, scoring):
+   
+   titlesuffix = ""
+   if dataLabel is not None:
+       titlesuffix = "of " + dataLabel + " dataset"
+       
+   fig, ax = plt.subplots(figsize=(8,6))
+   ax.set_title("Learning curve out of sample score")
    colors = ['bo','ro','yo','go','wo','mo','co','ko','bo','co']
    for j in range(len(scores)):
-       ax.plot(range(5, len(scores[j,:])+5),scores[j,:], colors[j], label=dataOutLabels[j])
+       if labels is not None:
+           ax.plot(range(len(scores[j,:])),scores[j,:], colors[j], label=labels[j])
+       else:
+           print("no labels were given for out of sample datasets")
+           ax.plot(range(len(scores[j,:])),scores[j,:], colors[j])
    ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
    ax.set_xlabel("Step")
-   ax.set_ylabel("Score")
-   ax.set_xticklabels(np.int64((range(len(scores))*step)+5))
-
+   ax.set_ylabel("Score ("+scoring+")")
+   ax.set_xticklabels((ax.get_xticks()*step)+5)
+   
    return fig, ax
 
-def LearningCurveOutOfSampleEnriched(scores, step, labels):
-   fig, ax = plt.subplots(1,1, figsize=(8,6))
-
-   ax.set_title("Learning curve out of sample score, stepwise increase of promoter in train library")
+def LearningCurveOutOfSampleEnriched(scores, step, labels, dataLabel, dataLabelEnriched, scoring):
+   
+   titlesuffix = ""
+   titlesuffixE = ""    
+   if dataLabel is not None:
+       titlesuffix = " of " + dataLabel + " dataset"
+   if dataLabelEnriched is not None:
+       if type(dataLabelEnriched) is list:
+           dataLabelsEnriched = ",".join(dataLabelEnriched )
+           titlesuffixE = "\n(enriched with " + dataLabelsEnriched + " dataset)"
+       else:
+           titlesuffixE = "\n(enriched with " + dataLabelEnriched + " dataset)"
+   
+   fig, ax = plt.subplots()
+   ax.set_title("Learning curve out of sample score" + titlesuffix + titlesuffixE)
    colors = ['bo','ro','yo','go','wo','mo','co','ko','bo','co']
    for j in range(len(scores)):
-       ax.plot(range(len(scores[j,:])),scores[j,:], colors[j], label=labels[j])
+       if labels is not None:
+           ax.plot(range(len(scores[j,:])),scores[j,:], colors[j], label=labels[j])
+       else:
+           print("no labels were given for figures")
+           ax.plot(range(len(scores[j,:])), scores[j,:], colors[j])
    ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
    ax.set_xlabel("Step")
-   ax.set_ylabel("Score")
-   ax.set_xticklabels(np.int64((np.arange(len(scores))*step)))
-
+   ax.set_ylabel("Score ("+scoring+")")
+   ax.set_xticklabels((ax.get_xticks()*step))
+   
    return fig, ax

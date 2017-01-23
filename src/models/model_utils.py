@@ -10,6 +10,7 @@ import pandas as pd
 import numpy as np
 import sklearn as sk
 import math
+import itertools
 from scipy import stats
 from sklearn.model_selection import KFold
 from sklearn.model_selection import GridSearchCV
@@ -21,6 +22,11 @@ from sklearn.svm import SVC, SVR
 from sklearn.preprocessing import PolynomialFeatures
 
 
+def CreateRankedLabels(a):
+    pw = list(itertools.combinations(a,2))
+    labels = [1 if item[0]>item[1] else -1 for item in pw]
+    
+    return labels 
 
 def GetParameterSet(parLabel, parRange):
     
@@ -119,7 +125,7 @@ def EvaluateParameterSet(X_train, X_test, y_train, y_test, parModel, parSet):
     
     return scores, optimalPar
 
-def EvaluateScore(X_train, X_test, y_train, y_test, parModel):
+def EvaluateScore(X_train, X_test, y_train, y_test, parModel, scoring='default', pw=False):
     
     """Evaluates the score of a model given for a given test and training data
     
@@ -143,12 +149,35 @@ def EvaluateScore(X_train, X_test, y_train, y_test, parModel):
 
     model = SelectModel(**parModel)
     model.fit(X_train,y_train)
-    score = model.score(X_test,y_test)
     y_pred = model.predict(X_test)
+    
+    if scoring == 'default':
+        score = model.score(X_test,y_test)
+    elif scoring == 'kt':
+        if pw is True:
+            score = KendallTau(y_pred, y_test)
+        if pw is False:
+            y_pred_pw = CreateRankedLabels(y_pred)
+            y_test_pw = CreateRankedLabels(y_test)
+            score = KendallTau(y_pred_pw, y_test_pw)
+        
+    elif scoring == 'spearman':
+        score = stats.spearmanr(y_test, y_pred)[0]
+        
+    else:
+        raise("Scoring type not defined. Possible options are: 'default', 'kt', and 'spearman'")
  
     return score, y_pred
 
-def LearningCurveInSample(dfDataset, featureBox, y ,parModel, k=5, pw=False, step=1):
+def KendallTau(y_pred, y_true):
+    a = np.array(y_pred)
+    b = np.array(y_true)
+    n = len(y_pred)
+    score = (np.sum(a==b)-np.sum(a!=b))/n
+    
+    return score
+
+def LearningCurveInSample(dfDataset, featureBox, y ,parModel, scoring='default', k=5, pw=False, step=1):
     
     """Calculates the learning curve of a dataset for a given model
     
@@ -216,7 +245,7 @@ def LearningCurveInSample(dfDataset, featureBox, y ,parModel, k=5, pw=False, ste
             else:
                 indexTrainInner = (dfDatasetTrain['ID'].isin(trainInner)).values
             X_trainInner, y_trainInner = X_train[indexTrainInner], y_train[indexTrainInner]
-            score, y_pred = EvaluateScore(X_trainInner, X_test, y_trainInner, y_test, {**parModel})
+            score, y_pred = EvaluateScore(X_trainInner, X_test, y_trainInner, y_test, {**parModel}, scoring, pw)
             scores = np.append(scores,score)
 
         it+=1
@@ -225,7 +254,8 @@ def LearningCurveInSample(dfDataset, featureBox, y ,parModel, k=5, pw=False, ste
     
     return scores
 
-def LearningCurveInSampleEnriched(dfDataset, featureBox, enrichBox, y, y_enrich ,parModel, k=5, pw=True, step=1):
+def LearningCurveInSampleEnriched(dfDataset, featureBox, enrichBox, y, y_enrich ,parModel, 
+                                  scoring='default', k=5, pw=True, step=1):
 
     """Calculates the learning curve of an enriched dataset for a given model
     
@@ -294,7 +324,7 @@ def LearningCurveInSampleEnriched(dfDataset, featureBox, enrichBox, y, y_enrich 
                 indexTrainInner = (dfDatasetTrain['ID'].isin(trainInner)).values
             X_trainInner = np.vstack((enrichBox,X_train[indexTrainInner]))
             y_trainInner =  np.append(y_enrich, y_train[indexTrainInner])
-            score, y_pred = EvaluateScore(X_trainInner, X_test, y_trainInner, y_test, {**parModel})
+            score, y_pred = EvaluateScore(X_trainInner, X_test, y_trainInner, y_test, {**parModel}, scoring, pw)
             scores = np.append(scores,score)
 
         it+=1
@@ -304,7 +334,7 @@ def LearningCurveInSampleEnriched(dfDataset, featureBox, enrichBox, y, y_enrich 
     return scores
 
 
-def LearningCurveOutOfSample(dfDataset, featureBox, y , dataList, parModel, pw=False, step=1):
+def LearningCurveOutOfSample(dfDataset, featureBox, y , dataList, parModel, scoring='default', pw=False, step=1):
 
     """Calculates the learning curve of a dataset for a given model
     
@@ -358,15 +388,14 @@ def LearningCurveOutOfSample(dfDataset, featureBox, y , dataList, parModel, pw=F
             indexTrain = dfDataset['ID'].isin(train).values
         X_train, y_train = featureBox[indexTrain], y[indexTrain]
         for j in range(len(dataList)):
-            score, y_pred = EvaluateScore(X_train, dataList[j][1].values, y_train, dataList[j][2], {**parModel})
-            if pw is True:
-                scores[j,i] = score
-            else:
-                scores[j,i] = abs(stats.spearmanr(dataList[j][0]['mean_score'],y_pred)[0])
-
+            score, y_pred = EvaluateScore(X_train, dataList[j][1].values, y_train, dataList[j][2], 
+                                          {**parModel}, scoring, pw)
+            scores[j,i] = score
+            
     return scores
 
-def LearningCurveOutOfSampleEnriched(dfDataset, featureBox, enrichBox, y, y_enrich, dataOutList, parModel, pw=True, step=1):
+def LearningCurveOutOfSampleEnriched(dfDataset, featureBox, enrichBox, y, y_enrich, dataOutList, 
+                                     parModel, scoring='default', pw=True, step=1):
     
     if pw is True:
         temp = np.unique(dfDataset[['ID_1', 'ID_2']].values)
@@ -390,11 +419,10 @@ def LearningCurveOutOfSampleEnriched(dfDataset, featureBox, enrichBox, y, y_enri
         X_train = np.vstack((enrichBox ,featureBox[indexTrain]))
         y_train = np.append(y_enrich, y[indexTrain])
         for j in range(len(dataOutList)):
-            score, y_pred = EvaluateScore(X_train, dataOutList[j][1].values, y_train, dataOutList[j][2], {**parModel})
+            score, y_pred = EvaluateScore(X_train, dataOutList[j][1].values, y_train, dataOutList[j][2],
+                                          {**parModel}, scoring, pw)
             if pw is True:
                 scores[j,i] = score
-            else:
-                scores[j,i] = abs(stats.spearmanr(dataOutList[j][0]['mean_score'],y_pred)[0])
 
     return scores
 
